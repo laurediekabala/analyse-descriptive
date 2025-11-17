@@ -1,0 +1,54 @@
+# Fichier .gitignore pour un projet Python de Data Science
+
+# 1. Environnements virtuels
+######################################
+# Dossiers venv/ et env/
+venv/
+env/
+.venv/
+.env/
+
+# Fichiers de compilation Python
+__pycache__/
+*.pyc
+*.pyd
+*.so
+*.egg-info
+build/
+dist/
+
+# 2. Artefacts Jupyter et IDE
+######################################
+# Checkpoints des notebooks
+.ipynb_checkpoints/
+
+# Fichiers de configuration IDE (VS Code, PyCharm/IntelliJ)
+.vscode/
+.idea/
+*.sublime-workspace
+
+# 3. Données et Modèles (CRUCIAL pour ne pas dépasser la limite de taille)
+#######################################################
+# Généralement, vous ne versionnez pas les données brutes
+# si elles sont trop volumineuses.
+data/
+Data/
+input/
+output/
+*.csv
+*.xlsx
+*.parquet
+*.zip
+
+# Modèles entraînés et résultats
+*.pkl
+*.joblib
+*.h5
+*.model
+models/
+results/
+
+# 4. Fichiers du système d'exploitation
+######################################
+.DS_Store # Mac OS
+Thumbs.db # Windows
